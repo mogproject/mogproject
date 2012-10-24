@@ -12,9 +12,9 @@ for src in "$@"; do
   copy "$src" "$dst" && continue
   dst="$dst.`date +%H%M%S`"
   copy "$src" "$dst" && continue
-  k=0
+  i=0
   while :; do
-    copy "$src" "$dst.$k" && break
-    k=`expr $k + 1`
+    copy "$src" "$dst.$i" && break
+    i=`expr $i + 1`
   done
 done
