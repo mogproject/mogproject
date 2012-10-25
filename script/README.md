@@ -11,6 +11,9 @@
         (2) _source-file-name_._YYYYMMDD_._hhmmss_    , if the file with a name above already exists
         (3) _source-file-name_._YYYYMMDD_._hhmmss_._N_
 
+#### EXAMPLE
+    todo
+
 #### EXIT STATUS
     The following exit values are returnd:  
         0    All files were backed up successfully.  
