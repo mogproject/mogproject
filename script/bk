@@ -1,15 +1,13 @@
 #!/bin/sh
 
 copy() {
-  [ -r "$2" ] && return 1
-  cp -piR "$1" "$2" && echo "\`$1' -> \`$2'" || exit 1
+  [ -s "$2" -o -f "$2" ] && return 1
+  cp -pR "$1" "$2" && echo "\`$1' -> \`$2'" || exit 1
 }
 
 for src in "$@"; do
   [ `basename "$src"` = . -o `basename "$src"` = .. ] && src=`cd "$src" && pwd`
   dst="$src.`date +%Y%m%d`"
-  copy "$src" "$dst" && continue
-  dst="$dst.`date +%H%M%S`"
   copy "$src" "$dst" && continue
   i=0
   while :; do
