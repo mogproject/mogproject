@@ -1,9 +1,8 @@
 #!/bin/sh
 
 copy() {
-  [ -e "$2" ] && return 1
-  cp -piR "$1" "$2" && ls -ld "$1" "$2"
-  return 0
+  [ -r "$2" ] && return 1
+  cp -piR "$1" "$2" && echo "\`$1' -> \`$2'" || exit 1
 }
 
 for src in "$@"; do
