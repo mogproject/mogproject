@@ -21,10 +21,10 @@
     bk file1
         'file1' will be copied to 'file1.20120123'.
         If 'file1.20120123' already exists, it will be copied to 'file1.20120123.0' 
-        Furthermore if 'file1.20120123.0' already exists,
+        Furthermore, if 'file1.20120123.0' already exists,
         it will be copied to 'file1.20120123.1' and so on.
     bk dir1 dir2
-        Whole directory 'dir1' will be copied to 'dir1.20120123',
+        Whole directory 'dir1' will be copied to 'dir1.20120123'
         and 'dir2' will be copied to 'dir2.20120123'
     bk .
         You can use '.' (current directory) and '..' (parent directory).
