@@ -29,6 +29,9 @@
     bk .
         You can use '.' (current directory) and '..' (parent directory).
 
+#### EXAMPLE
+    todo
+
 #### EXIT STATUS
     The following exit values are returnd:  
         0    All files were backed up successfully.  
