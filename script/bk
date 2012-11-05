@@ -6,6 +6,7 @@ copy() {
 }
 
 for src in "$@"; do
+  src=`echo "$src" | sed -e "s/\/*$//"`
   [ `basename "$src"` = . -o `basename "$src"` = .. ] && src=`cd "$src" && pwd`
   dst="$src.`date +%Y%m%d`"
   copy "$src" "$dst" && continue
