@@ -1,0 +1,77 @@
+<html><!--
+'*****************************************************************************
+'*
+'* NAME           :
+'*
+'* DESCRIPTION    :
+'*
+'* VERSION HISTORY:
+'* 1.0  yyyy-mm-dd  Initial release by AUTHOR
+'*
+'*****************************************************************************
+--><head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<title> </title>
+
+<script language="JavaScript"><!--
+// Initialize window size.
+(function(width, height) {
+  width = Math.min(width, screen.width);
+  height = Math.min(height, screen.height);
+  window.resizeTo(width, height);
+  window.moveTo((screen.width - width) / 2, (screen.height - height) / 2);
+})(300, 84)
+--></script>
+
+<HTA:APPLICATION
+ ID             ="hta"
+ APPLICATIONNAME="Application"
+ VERSION        ="1.0"
+ ICON           =""
+ BORDER         ="normal"
+ BORDERSTYLE    ="normal"
+ CAPTION        ="yes"
+ INNERBORDER    ="yes"
+ MAXIMIZEBUTTON ="yes"
+ MINIMIZEBUTTON ="yes"
+ SHOWINTASKBAR  ="yes"
+ SINGLEINSTANCE ="yes"
+ SYSMENU        ="yes"
+ WINDOWSTATE    ="normal"
+ SCROLL         ="no"
+ SCROLLFLAT     ="yes"
+ SELECTION      ="no"
+ CONTEXTMENU    ="yes"
+ NAVIGABLE      ="no" />
+<style type="text/css"><!--
+body {
+  font-family     : Verdana, Arial, Helvetica, Sans-serif;
+  font-size       : 14px;
+  font-weight     : normal;
+  background-color: #ccffcc;
+  color           : #000000;
+  margin          : 0px 0px 0px 0px;
+}
+table {
+  border-collapse: collapse;
+  border-spacing : 0px;
+  border-width   : 0px;
+  border-style   : solid;
+}
+--></style>
+
+<script language="JavaScript"><!--
+window.onload = function() {
+  document.title =  hta.applicationName + " v" + hta.version;
+}
+--></script>
+</head>
+ 
+<body>
+<table width="100%">
+<tr height="40px">
+ <td align="center">Hello, World</td>
+</tr>
+</table>
+</body>
+</html>
