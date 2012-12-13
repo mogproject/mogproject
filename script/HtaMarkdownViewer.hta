@@ -12,6 +12,7 @@
  *
  * VERSION HISTORY:
  * 1.0  2012-11-13  Initial release by mogproject <mogproject.blogspot.com>
+ * 1.1  2012-12-14  Add error handling by mogproject <mogproject.blogspot.com>
  */
 --><head>
 <meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
@@ -1475,36 +1476,50 @@ hr {
 
 <script type="text/javascript"><!--
 window.onload = function() {
-  // Parse HTA arguments.
-  var path;
-  var commands = hta.commandLine.split('"');
-  for (var i = 2; i < commands.length; ++i) {
-    path = commands[i].replace(/^[ ]*/, "");
-    path = path.replace(/[ ]*$/, "");
-    if ("" != path) break;
+  try {
+    // Parse HTA arguments.
+    var path;
+    var commands = hta.commandLine.split('"');
+    for (var i = 2; i < commands.length; ++i) {
+      path = commands[i].replace(/^[ ]*/, "");
+      path = path.replace(/[ ]*$/, "");
+      if ("" != path) break;
+    }
+
+    // Get file path.
+    if ("" == path) {
+      path = htmlDlgHelper.openfiledlg("", "",
+        "テキスト文書(*.txt,*.md)|*.txt;*.md|すべてのファイル(*.*)|*.*|");
+      path = path.substr(0, path.indexOf("\0"));
+      if ("" == path) window.close();
+    }
+
+    // Set title.
+    var fso = new ActiveXObject("Scripting.FileSystemObject");
+    document.title = fso.GetFileName(path);
+
+    // Load text file.
+    try {
+      var in_file = fso.OpenTextFile(path);
+      var text = in_file.ReadAll();
+    }
+    catch (e) {
+      throw new Error(
+        "ファイルの読み込みに失敗しました。\n\n" + path + ":" + e.message);
+    }
+    finally {
+      if (in_file) in_file.Close();
+    }
+
+    // Convert markdown to html.
+    var converter = new Showdown.converter();
+    var previewPane = document.getElementById("previewPane");
+    previewPane.innerHTML = converter.makeHtml(text);
   }
-
-  // Get file path.
-  if ("" == path) {
-    path = htmlDlgHelper.openfiledlg("", "",
-      "テキスト文書(*.txt,*.md)|*.txt;*.md|すべてのファイル(*.*)|*.*|");
-    path = path.substr(0, path.indexOf("\0"));
-    if ("" == path) window.close();
+  catch(e) {
+    alert(e.message);
+    window.close();
   }
-
-  // Set title.
-  var fso = new ActiveXObject("Scripting.FileSystemObject");
-  document.title = fso.GetFileName(path);
-
-  // Load text file.
-  var in_file = fso.OpenTextFile(path);
-  var text = in_file.ReadAll();
-  in_file.Close();
-
-  // Convert markdown to html.
-  var converter = new Showdown.converter();
-  var previewPane = document.getElementById("previewPane");
-  previewPane.innerHTML = converter.makeHtml(text);
 }
 --></script>
 </head>
