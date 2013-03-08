@@ -10,9 +10,6 @@
  *
  * LISENCE        : BSD-style open source lisence
  *
- * VERSION HISTORY:
- * 1.0  2012-11-13  Initial release by mogproject <mogproject.blogspot.com>
- * 1.1  2012-12-14  Add error handling by mogproject <mogproject.blogspot.com>
  */
 --><head>
 <meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
@@ -1499,9 +1496,10 @@ window.onload = function() {
     document.title = fso.GetFileName(path);
 
     // Load text file.
+    var text = '';
     try {
       var in_file = fso.OpenTextFile(path);
-      var text = in_file.ReadAll();
+      if (! in_file.AtEndOfStream) text = in_file.ReadAll();
     }
     catch (e) {
       throw new Error(
