@@ -1,3 +1,6 @@
-### Wiki
+## Setup
 
-https://github.com/mogproject/mogproject/wiki
+How to set myself up.
+
+- [Setup my Mac](setup/mac.md)
+
