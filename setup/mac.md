@@ -1,5 +1,16 @@
 ## Setup my Mac
 
+### MacBook Pro 2016 (macOS Sierra)
+
+- Initial setup
+- Logging into accounts: Apple/Google
+
+### System Preferences
+
+
+
+
+
 TBD
 
 - ref. https://github.com/mogproject/mogproject/wiki/Setup-My-Mac
