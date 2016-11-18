@@ -29,13 +29,53 @@
   - [x] Show a message when the screen is locked
     - Lock message: "[Emergency Contact]\nTwitter: @mogproject   Email: mogproj@gmail.com"
   - Firewall: Turn On
+- Keyboard
+  - Modifier Keys
+    - Caps Lock -> Control
+    - Control -> Caps Lock
+    - Option -> Command
+    - Command -> Option
+- Trackpad
+  - Tap to click
+- Sound
+  - Sound Effects
+    - Internal Speakers
+    - Alert volume: 0
+- Users & Groups
+  - Edit the icon
+  - Gest User: Off
 
+- Remove unnecessary icons from Dock
 
+### Firefox
+
+- Download & install
+- Advanced
+  - Data Choices
 
 ### DropBox
 
+- Download & install
 
-### iTerm
+```
+sudo ln -s ~/Dropbox /
+```
+
+- Install fonts
+  - Essential Pragmata Pro Family
+
+### BetterTouchTool
+
+- Download & install
+- Import license file
+- Advanced Settings
+  - [x] Launch BetterTouchTool on startup
+- Define trackpad gestures
+
+
+### iTerm2
+
+- Download & install
 
 
 
