@@ -43,6 +43,7 @@
     - Alert volume: 0
 - Users & Groups
   - Edit the icon
+  - Set shell: /bin/zsh
   - Gest User: Off
 
 - Remove unnecessary icons from Dock
@@ -72,15 +73,57 @@ sudo ln -s ~/Dropbox /
   - [x] Launch BetterTouchTool on startup
 - Define trackpad gestures
 
-
 ### iTerm2
 
 - Download & install
+- Preferences
+  - Closing
+    - [ ] Confirm closing multiple sessions
+    - [ ] Confirm "Quit iTerm2" command
+- Hotkey
+- Create Visor profile
+- Import "Solalized Dark Higher Contrast" color preset
+
+- Create `~/.zshrc`
+
+```
+. /Dropbox/config/_zshrc
+```
+
+- Install JDK
+
+### TotalSpaces2
+
+- Download & install
+- Register the license
+- General
+  - Start at Login
+  - Zoom to overview grid animation: None
+  - Backgrounds in the overview grid: None (fastest)
+- Layout: 9x9
+- Transitions: the Fastest
+
+### Homebrew
+
+- Install Homebrew
+
+```
+brew install tmux
+ln -s /Dropbox/config/_tmux.conf ~/.tmux.conf
+```
+
+### Karabiner-Elements
+
+- Key Repeat
+  - Delay: 250 ms
+  - Key Repeat: 20 ms
+
+### Flash Player
 
 
 
 
-TBD
+##### Old Link
 
 - ref. https://github.com/mogproject/mogproject/wiki/Setup-My-Mac
 
