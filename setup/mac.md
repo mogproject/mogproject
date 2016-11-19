@@ -112,6 +112,11 @@ brew install tmux
 ln -s /Dropbox/config/_tmux.conf ~/.tmux.conf
 ```
 
+```
+brew install npm
+brew install tig
+```
+
 ### Karabiner-Elements
 
 - Key Repeat
@@ -126,29 +131,22 @@ mkdir ~/Library/KeyBindings
 ln -s $DROPBOX_DIR/config/_EmacsKeyBinding.dict ~/Library/KeyBindings/DefaultKeyBinding.dict
 ```
 
+### Programming Languages
+
+#### Python
+
+```
+pip install pep8
+```
+
 - [ ] Flash Player
 - [ ] [GitHub](github.md)
 - [ ] Vim: `echo ":source /Dropbox/config/_vimrc" > ~/.vimrc`
 - [ ] [f.lux](https://justgetflux.com/)
 - [ ] [Firefox](firefox.md)
+- [ ] [Visual Studio Code](vscode.md)
 
 ##### Old Link
 
 - ref. https://github.com/mogproject/mogproject/wiki/Setup-My-Mac
-
-
-
-### Visual Studio Code
-
-- Download & install the binary
-- User settings
-  - `~/Library/Application\ Support/Code/User/keybindings.json`
-  - `~/Library/Application\ Support/Code/User/settings.json`
-  - `~/Library/Application\ Support/Code/User/snippets/cpp.json`
-- Install extensions
-  - C++ by Microsoft
-  - Python by Don Jayamanne
-  - Python Extended by Taiwo Kareem
-  - TODO Parser by minhtai
-  - [mog-vscode](https://github.com/mogproject/mog-vscode)
 
