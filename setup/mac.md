@@ -30,7 +30,7 @@
     - Lock message: "[Emergency Contact]\nTwitter: @mogproject   Email: mogproj@gmail.com"
   - Firewall: Turn On
 - Keyboard
-  - Modifier Keys
+  - Modifier Keys (only if keyboard == Apple Internal Keyboard)
     - Caps Lock -> Control
     - Control -> Caps Lock
     - Option -> Command
@@ -123,6 +123,9 @@ brew install tig
   - Delay: 250 ms
   - Key Repeat: 20 ms
 
+```
+defaults write -g KeyRepeat -int 1
+```
 
 ### Key bindings
 
@@ -145,6 +148,11 @@ pip install pep8
 - [ ] [f.lux](https://justgetflux.com/)
 - [ ] [Firefox](firefox.md)
 - [ ] [Visual Studio Code](vscode.md)
+- [ ] [Scroll Reverser](https://pilotmoon.com/scrollreverser/)
+- [ ] Logicool Mouseware
+- [ ] Skitch (App Store)
+
+
 
 ##### Old Link
 
