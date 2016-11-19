@@ -118,10 +118,19 @@ ln -s /Dropbox/config/_tmux.conf ~/.tmux.conf
   - Delay: 250 ms
   - Key Repeat: 20 ms
 
-### Flash Player
 
+### Key bindings
 
+```
+mkdir ~/Library/KeyBindings
+ln -s $DROPBOX_DIR/config/_EmacsKeyBinding.dict ~/Library/KeyBindings/DefaultKeyBinding.dict
+```
 
+- [ ] Flash Player
+- [ ] [GitHub](github.md)
+- [ ] Vim: `echo ":source /Dropbox/config/_vimrc" > ~/.vimrc`
+- [ ] [f.lux](https://justgetflux.com/)
+- [ ] [Firefox](firefox.md)
 
 ##### Old Link
 
