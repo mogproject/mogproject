@@ -48,6 +48,17 @@
 
 - Remove unnecessary icons from Dock
 
+### Finder
+
+```
+defaults write com.apple.finder AppleShowAllFiles YES
+killall Finder
+```
+
+```
+defaults write .GlobalPreferences com.apple.scrollwheel.scaling -1
+```
+
 ### Firefox
 
 - Download & install
@@ -151,6 +162,7 @@ pip install pep8
 - [ ] [Scroll Reverser](https://pilotmoon.com/scrollreverser/)
 - [ ] Logicool Mouseware
 - [ ] Skitch (App Store)
+- [ ] iTunes: library data migration
 
 
 

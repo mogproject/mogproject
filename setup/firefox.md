@@ -6,7 +6,7 @@ Setup Firefox
 - browser.search.openintab: false => true
 - browser.tabs.closeWindowWithLastTab: true => false
 - browser.tabs.warnOnClose: true => false
-- mousewheel.default.delta_multiplier_y: 100 => 500
+- mousewheel.default.delta_multiplier_y: 100 => 400
 
 ### Add-ons
 
@@ -44,6 +44,7 @@ Setup Firefox
   - Builtin command as Ext
   - Carent hint
   - Tanything
+  - KKK
   - Keybind helper (/Dropbox/config/keysnail/keybind-helper.ks.js)
   - Option key as meta key: (/Dropbox/config/keysnail/option-as-meta.ks.js)
 
