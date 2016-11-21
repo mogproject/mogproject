@@ -10,6 +10,15 @@ Setup Firefox
 
 ### Add-ons
 
+##### YesScript
+
+- Blacklist
+
+```
+http://www.google.com
+https://www.google.com
+```
+
 ##### In My Pocket
 ##### Make Link
 ##### Open Link in New Tab
@@ -40,11 +49,9 @@ Setup Firefox
   - Dark Theme  
   - Set Mac
   - HoK
-  - Yet Another Twitter Client KeySnail
   - Builtin command as Ext
   - Carent hint
   - Tanything
-  - KKK
   - Keybind helper (/Dropbox/config/keysnail/keybind-helper.ks.js)
   - Option key as meta key: (/Dropbox/config/keysnail/option-as-meta.ks.js)
 
