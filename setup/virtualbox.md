@@ -24,10 +24,12 @@ mv ~/Downloads/IE11_Win7 /vm/
   - System
     - CPU: 4
     - Base memory: 2GB
+  - Disable all network adapters (no Internet connection)
   - Ports -> USB 2.0
 - Take a snapshot
 - Boot
 - Disable scheduled defragmentation
+- Turn off Windows Update
 
 ### References
 

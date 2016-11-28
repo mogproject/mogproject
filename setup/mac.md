@@ -45,6 +45,12 @@
   - Edit the icon
   - Set shell: /bin/zsh
   - Gest User: Off
+- Kayboard
+  - Text
+    - [ ] Correct spelling automatically
+    - [ ] Capitalize words automatically
+    - [ ] Add period with double-space
+    - [ ] Use smart quotes and dashes
 
 - Remove unnecessary icons from Dock
 
