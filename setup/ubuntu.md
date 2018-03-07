@@ -36,4 +36,9 @@ apt-get update
 apt-get install terminator
 ```
 
+- Required for Python 3.6.4
+
+```
+apt install readline-dev libbz2-dev libpng-dev libssl-dev libsqlite3-dev
+```
 
