@@ -8,7 +8,16 @@ Setup Eclipse
 
 - General -> Keys
   - Run JUnit Test: Command + Enter
+  - Clear Mark: Esc: Editing Text
+  - Close Others: ^X ^C: In Windows
+  - Content Assist: ^J: In Windows
 
 - General -> Workspace
   - Save automatically before build
+
+
+
+### BetterTouchTool
+
+- `^G` -> `ESC`
 
