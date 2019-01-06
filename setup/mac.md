@@ -134,11 +134,13 @@ brew install npm
 brew install tig
 ```
 
-### Karabiner-Elements
+### [Deprecated!] Karabiner-Elements
 
 - Key Repeat
   - Delay: 250 ms
   - Key Repeat: 20 ms
+
+### Key Repeat Setting (new)
 
 ```
 defaults write -g KeyRepeat -int 1
