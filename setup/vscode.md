@@ -5,9 +5,10 @@ Setup Visual Studio Code
 - User settings
 
 ```
-$ mkdir -p ~/Library/Application\ Support/Code/User
-$ ln -s $DROPBOX_DIR/config/vscode/snippets ~/Library/Application\ Support/Code/User/
-$ ln -s $DROPBOX_DIR/config/vscode/settings.json ~/Library/Application\ Support/Code/User/
+mkdir -p ~/Library/Application\ Support/Code/User
+ln -s $DROPBOX_DIR/config/vscode/snippets ~/Library/Application\ Support/Code/User/
+ln -s $DROPBOX_DIR/config/vscode/settings.json ~/Library/Application\ Support/Code/User/
+ln -s $DROPBOX_DIR/config/vscode/keybindings.json ~/Library/Application\ Support/Code/User/
 ```
 
 - Install extensions
