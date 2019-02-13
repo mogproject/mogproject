@@ -90,6 +90,20 @@ sudo ln -s ~/Dropbox /
   - [x] Launch BetterTouchTool on startup
 - Define trackpad gestures
 
+
+### Homebrew
+
+- Install Homebrew
+
+```
+brew install tmux
+ln -s /Dropbox/config/_tmux.conf ~/.tmux.conf
+```
+
+```
+brew install htop pyenv npm tig
+```
+
 ### iTerm2
 
 - Download & install
@@ -120,20 +134,6 @@ sudo ln -s ~/Dropbox /
 - Layout: 9x9
 - Transitions: the Fastest
 
-### Homebrew
-
-- Install Homebrew
-
-```
-brew install tmux
-ln -s /Dropbox/config/_tmux.conf ~/.tmux.conf
-```
-
-```
-brew install npm
-brew install tig
-```
-
 ### [Deprecated!] Karabiner-Elements
 
 - Key Repeat
@@ -158,10 +158,18 @@ ln -s $DROPBOX_DIR/config/_EmacsKeyBinding.dict ~/Library/KeyBindings/DefaultKey
 #### Python
 
 ```
+brew install readline xz
+sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /
+pyenv install 2.7.15
+
 pip install pep8
 ```
 
-- [ ] Flash Player
+#### Git
+
+- Create `~/.gitconfig`
+
+- x Flash Player
 - [ ] [GitHub](github.md)
 - [ ] Vim: `echo ":source /Dropbox/config/_vimrc" > ~/.vimrc`
 - [ ] [f.lux](https://justgetflux.com/)

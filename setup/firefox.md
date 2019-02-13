@@ -7,6 +7,7 @@ Setup Firefox
 - browser.tabs.closeWindowWithLastTab: true => false
 - browser.tabs.warnOnClose: true => false
 - mousewheel.default.delta_multiplier_y: 100 => 400
+- mousewheel.min_line_scroll_amount: 5 => 40
 
 ### Add-ons
 
