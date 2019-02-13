@@ -1,3 +1,4 @@
+
 ## Setup my Mac
 
 ### MacBook Pro 2016 (macOS Sierra)
@@ -165,12 +166,13 @@ pyenv install 2.7.15
 pip install pep8
 ```
 
-#### Git
+#### Misc
 
-- Create `~/.gitconfig`
+```
+brew install coreutils≤
+````
 
-- x Flash Player
-- [ ] [GitHub](github.md)
+- [ ] git / [GitHub](github.md)
 - [ ] Vim: `echo ":source /Dropbox/config/_vimrc" > ~/.vimrc`
 - [ ] [f.lux](https://justgetflux.com/)
 - [ ] [Firefox](firefox.md)
