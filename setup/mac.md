@@ -89,6 +89,9 @@ sudo ln -s ~/Dropbox /
 - Import license file
 - Advanced Settings
   - [x] Launch BetterTouchTool on startup
+- Global
+  - ^M: Enter  repeat, 0.06, 0.2
+  - ^I: Tab
 - Define trackpad gestures
 
 
@@ -114,7 +117,20 @@ brew install htop pyenv npm tig
     - [ ] Confirm "Quit iTerm2" command
 - Hotkey
 - Create Visor profile
-- Import "Solalized Dark Higher Contrast" color preset
+  - General
+    - Name: Visor
+    - Command: Send text at start: tmux a || tmux
+  - Colors: Load "SolarizedHighContrastDark"
+  - Text: Font-> Essential PragmataPro, NON-ASCII -> Osaka-Mono
+  - Window:
+    - Set transparency
+    - Style: Full-Width Top of Screen
+  - Terminal
+    - Silence bell, flash visual bell -> Off
+  - Session
+    - Prompt before ...
+  - Keys: Left/Right option -> Esc+  !!! IMPORTANT !!!
+    - Hotkey: ^`
 
 - Create `~/.zshrc`
 
