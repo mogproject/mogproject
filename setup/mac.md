@@ -185,7 +185,7 @@ pip install pep8
 #### Misc
 
 ```
-brew install coreutils≤
+brew install coreutils clang-format
 ````
 
 - [ ] git / [GitHub](github.md)
