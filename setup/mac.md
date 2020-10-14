@@ -77,7 +77,7 @@ defaults write .GlobalPreferences com.apple.scrollwheel.scaling -1
 - Download & install
 
 ```
-sudo ln -s ~/Dropbox /
+## deprecated from 10.15 ## sudo ln -s ~/Dropbox /
 ```
 
 - Install fonts
@@ -101,7 +101,7 @@ sudo ln -s ~/Dropbox /
 
 ```
 brew install tmux
-ln -s /Dropbox/config/_tmux.conf ~/.tmux.conf
+ln -s ~/Dropbox/config/_tmux.conf ~/.tmux.conf
 ```
 
 ```
@@ -136,6 +136,12 @@ brew install htop pyenv npm tig
 
 ```
 . /Dropbox/config/_zshrc
+```
+
+```
+$ cd /usr/local/share/
+$ sudo chmod -R 755 zsh
+$ sudo chown -R root:staff zsh
 ```
 
 - Install JDK
