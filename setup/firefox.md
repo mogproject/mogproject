@@ -9,6 +9,22 @@ Setup Firefox
 - mousewheel.default.delta_multiplier_y: 100 => 400
 - mousewheel.min_line_scroll_amount: 5 => 40
 
+### policies.json
+
+- Create directory: `/Applications/Firefox.app/Contents/Resources/distribution`
+- Create file: `policies.json`
+
+```
+{
+"policies": 
+   {
+     "DisableAppUpdate": true
+    }
+}
+```
+
+
+
 ### Add-ons
 
 ##### YesScript
@@ -35,7 +51,11 @@ https://www.google.com
 - Export and import old settings
 
 ##### Text Link
-##### [KeySnail](https://github.com/mooz/keysnail/wiki)
+
+
+
+
+## Deprecated as of 2021
 
 - Select init file place: /Dropbox/config/keysnail
 - Settings
