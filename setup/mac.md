@@ -53,6 +53,12 @@
     - [ ] Add period with double-space
     - [ ] Use smart quotes and dashes
 
+- Disable accent pop-ups
+
+```
+defaults write -g ApplePressAndHoldEnabled -bool false
+```
+
 - Remove unnecessary icons from Dock
 
 ### Finder
