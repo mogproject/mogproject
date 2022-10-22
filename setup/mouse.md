@@ -10,7 +10,7 @@ Setup Logitech G600
 |Middle click|Middle click (button 3)||
 |Left tilt|Back||
 |Right tilt|Forward||
-|G-shift|G-shift||
+|G-shift|G-shift or Esc||
 |G7 |Mode switch||
 |G8 |Enter||
 |G9 |Previous Tab|Win + T (new tab)|
@@ -22,9 +22,9 @@ Setup Logitech G600
 |G15|Ctrl + F1||
 |G16|Ctrl + F2||
 |G17|Ctrl + F3||
-|G18|Alt + LeftCmd + Left||
-|G19|Alt + LeftCmd + Down||
-|G20|Alt + LeftCmd + Right||
+|G18|Ctrl + F4||
+|G19|Ctrl + F5||
+|G20|Ctrl + F6||
 
 - Pointer
 
